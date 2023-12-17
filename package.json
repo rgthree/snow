@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "uglify-js": "^3.17.4"
+  },
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc && uglifyjs --compress --mangle --comments some --output ./dist/snow.js -- ./dist/snow.js"
+  }
+}
